@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navbar from '../../Components/NavBar';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+
   return (
     <div>
-      <h1>WELCOME</h1>
+      <Navbar/>
+      {/* <h1>Welcome to Home Page</h1>
+      <button onClick={handleLogout}>Logout</button> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
