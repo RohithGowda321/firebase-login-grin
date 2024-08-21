@@ -1,0 +1,151 @@
+.introduction {
+    .promo-section {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      font-family: Poppins;
+      color: #fff;
+  
+      .promo-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 125px 20px 304px 100px;
+        background: linear-gradient(100.08deg, #000 1.35%, rgba(102, 102, 102, 0));
+        border-radius: 0 0 130px 0;
+  
+        .promo-background {
+          width: 100%;
+          height: 600px;
+          position: relative;
+          display: none;
+          background: inherit;
+          border-radius: inherit;
+        }
+  
+        .promo-title {
+          margin: 0;
+          font-size: 40px;
+          font-weight: 700;
+          position: relative;
+          z-index: 2;
+  
+          p {
+            margin: 0;
+          }
+        }
+  
+        .promo-subtitle {
+          margin: 0;
+          font-size: 30px;
+          font-weight: 500;
+          position: relative;
+          z-index: 2;
+        }
+      }
+  
+      .promo-content {
+        display: flex;
+        margin-top: -389px;
+        padding: 0 20px;
+        justify-content: end;
+  
+        .promo-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          width: 350px;
+          padding: 15px;
+          background-color: #fff;
+          border-radius: 20px;
+          box-shadow: 0 4px 4px rgba(0, 87, 255, 0.25);
+  
+          .card-shadow {
+            width: 100%;
+            height: 473px;
+            display: none;
+            box-shadow: inherit;
+            border-radius: inherit;
+            background-color: #fff;
+          }
+  
+          .card-image {
+            flex: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            object-fit: cover;
+            z-index: 3;
+          }
+  
+          .get-started-button {
+            margin-top: 20px;
+            width: 321px;
+            height: 69px;
+            background-color: #00ca00;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            z-index: 3;
+  
+            &:hover {
+              background-color: #1ae31a;
+            }
+  
+            .button-background {
+              display: none;
+            }
+  
+            .button-text {
+              font-size: 24px;
+              font-weight: 600;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  
+    @media screen and (max-width: 1000px) {
+      .promo-title {
+        font-size: 32px;
+      }
+  
+      .promo-subtitle {
+        font-size: 24px;
+      }
+    }
+  
+    @media screen and (max-width: 725px) {
+      .promo-banner {
+        padding: 81px 20px 198px 50px;
+      }
+  
+      .promo-card {
+        padding-top: 409px;
+        padding-bottom: 20px;
+      }
+    }
+  
+    @media screen and (max-width: 450px) {
+      .promo-title {
+        font-size: 24px;
+      }
+  
+      .promo-subtitle {
+        font-size: 18px;
+      }
+  
+      .promo-banner {
+        padding-left: 20px;
+      }
+  
+      .promo-card {
+        gap: 15px;
+      }
+    }
+  }
+  

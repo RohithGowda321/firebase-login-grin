@@ -1,0 +1,349 @@
+.home {
+  .promo-section {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-family: Poppins;
+    color: #fff;
+
+    .promo-banner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 125px 20px 304px 100px;
+      background: linear-gradient(100.08deg, #000 1.35%, rgba(102, 102, 102, 0));
+      border-radius: 0 0 130px 0;
+
+      .promo-background {
+        width: 100%;
+        height: 600px;
+        position: relative;
+        display: none;
+        background: inherit;
+        border-radius: inherit;
+      }
+
+      .promo-title {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .promo-subtitle {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 500;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .promo-content {
+      display: flex;
+      margin-top: -389px;
+      padding: 0 20px;
+      justify-content: end;
+
+      .promo-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 350px;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 4px 4px rgba(0, 87, 255, 0.25);
+
+        .card-shadow {
+          width: 100%;
+          height: 473px;
+          display: none;
+          box-shadow: inherit;
+          border-radius: inherit;
+          background-color: #fff;
+        }
+
+        .card-image {
+          flex: 1;
+          border-radius: 20px;
+          overflow: hidden;
+          object-fit: cover;
+          z-index: 3;
+        }
+
+        .get-started-button {
+          margin-top: 20px;
+          width: 321px;
+          height: 69px;
+          background-color: #00ca00;
+          border-radius: 10px;
+          cursor: pointer;
+          border: none;
+          padding: 20px;
+          text-align: center;
+          z-index: 3;
+
+          &:hover {
+            background-color: #1ae31a;
+          }
+
+          .button-background {
+            display: none;
+          }
+
+          .button-text {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0, 87, 255, 0.25);
+
+    margin: 40px auto;
+    max-width: 1300px;
+    width: calc(100% - 40px);
+
+    .card {
+      background-color: #f2eded;
+      border-radius: 20px;
+      border: 2px solid #f8f8f8;
+      transition: transform 0.3s ease;
+      align-self: stretch;
+
+      width: 28%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+
+        .icon {
+          width: 75px;
+          height: 75px;
+          border: 2px solid #00ca00;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 60%;
+            height: 60%;
+          }
+        }
+
+        .text {
+          margin-left: 20px;
+
+          h3 {
+            margin: 0;
+            color: #00ca00;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+          }
+
+          p {
+            margin: 0;
+            margin-top: 5px;
+            color: #707070;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+          }
+        }
+      }
+    }
+  }
+
+  .electric-rides-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headline {
+    font-size: 55px;
+    font-weight: bold;
+    color: #00ca00;
+    margin: 0;
+  }
+
+  .subheadline {
+    font-size: 40px;
+    font-weight: bold;
+    color: #00ca00;
+    margin: 0;
+  }
+
+  .tagline {
+    font-size: 30px;
+    color: #0066ff;
+    margin-top: 40px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+
+  // Media Queries
+  @media screen and (max-width: 1200px) {
+    .cards-container {
+      .card {
+        width: calc(50% - 20px); // Adjust card width for medium screens
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .promo-banner {
+      padding: 100px 20px 250px 70px;
+    }
+
+    .promo-card {
+      width: 300px; // Adjust card width for medium screens
+    }
+
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+
+      .card {
+        width: 80%;
+        margin-bottom: 20px; // Space between cards in column layout
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .promo-title {
+      font-size: 28px;
+    }
+
+    .promo-subtitle {
+      font-size: 22px;
+    }
+
+    .promo-banner {
+      padding: 80px 20px 200px 50px;
+    }
+
+    .promo-card {
+      width: 280px;
+    }
+
+    .cards-container {
+      .card {
+        width: 90%;
+        margin-bottom: 20px; // Space between cards
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .promo-title {
+      font-size: 24px;
+    }
+
+    .promo-subtitle {
+      font-size: 20px;
+    }
+
+    .promo-banner {
+      padding: 60px 10px 150px 30px;
+    }
+
+    .promo-card {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .cards-container {
+      .card {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+    .electric-rides-container {
+      .headline {
+        font-size: 45px;
+      }
+
+      .subheadline {
+        font-size: 32px;
+      }
+
+      .tagline {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .promo-title {
+      font-size: 20px;
+    }
+
+    .promo-subtitle {
+      font-size: 18px;
+    }
+
+    .promo-banner {
+      padding: 50px 10px 120px 20px;
+    }
+
+    .promo-card {
+      width: 100%;
+      padding: 5px;
+    }
+
+    .cards-container {
+      .card {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px; // Reduce margin for very small screens
+      }
+    }
+
+    .electric-rides-container {
+      .headline {
+        font-size: 40px;
+      }
+
+      .subheadline {
+        font-size: 30px;
+      }
+
+      .tagline {
+        font-size: 20px;
+      }
+    }
+  }
+}
